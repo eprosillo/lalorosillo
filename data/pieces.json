@@ -1,0 +1,31 @@
+{
+  "site": {
+    "name": "Lalo Rosillo",
+    "tagline": "Photography",
+    "contact": ""
+  },
+  "series": [
+    {
+      "id": "street",
+      "title": "Street",
+      "description": "Placeholder series. Replace with your own description."
+    },
+    {
+      "id": "sports",
+      "title": "School Sports",
+      "description": "Placeholder series. Replace with your own description."
+    }
+  ],
+  "pieces": [
+    {
+      "id": "placeholder-01",
+      "series": "street",
+      "title": "Untitled",
+      "year": 2026,
+      "medium": "Digital photograph",
+      "description": "",
+      "image": "images/placeholder-01.jpg",
+      "alt": "Placeholder image"
+    }
+  ]
+}

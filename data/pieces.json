@@ -1,19 +1,27 @@
 {
   "site": {
     "name": "Lalo Rosillo",
-    "tagline": "Photography",
-    "contact": ""
+    "email": "eprosillo@gmail.com",
+    "instagram": "[Instagram handle — Lalo to add]"
   },
   "series": [
     {
       "id": "street",
       "title": "Street",
-      "description": "Placeholder series. Replace with your own description."
+      "note": "[Short note about Street — Lalo to write]",
+      "cover": "images/cover-street.jpg"
+    },
+    {
+      "id": "architecture",
+      "title": "Architecture",
+      "note": "[Short note about Architecture — Lalo to write]",
+      "cover": "images/cover-architecture.jpg"
     },
     {
       "id": "sports",
-      "title": "School Sports",
-      "description": "Placeholder series. Replace with your own description."
+      "title": "Sports",
+      "note": "[Short note about Sports — Lalo to write]",
+      "cover": "images/cover-sports.jpg"
     }
   ],
   "pieces": [
@@ -21,9 +29,8 @@
       "id": "placeholder-01",
       "series": "street",
       "title": "Untitled",
+      "location": "",
       "year": 2026,
-      "medium": "Digital photograph",
-      "description": "",
       "image": "images/placeholder-01.jpg",
       "alt": "Placeholder image"
     }

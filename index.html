@@ -4,29 +4,60 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lalo Rosillo — Photography</title>
-  <meta name="description" content="Street and school sports photography by Lalo Rosillo, Austin, Texas.">
+  <meta name="description" content="Street, architecture, and sports photography by Lalo Rosillo, Austin, Texas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="home">
   <header class="site-header">
     <a class="site-name" href="index.html">Lalo Rosillo</a>
-    <nav>
-      <a href="index.html">Work</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Work</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <nav id="filters" class="filters" aria-label="Filter by series"></nav>
+  <main class="wrap">
+    <section class="hero">
+      <p class="opening">[Opening line — Lalo to write]</p>
+    </section>
 
-  <p id="empty" class="empty" hidden>Work is coming soon.</p>
+    <section class="tiles" aria-label="Work">
+      <a class="tile" href="street.html" data-series="street">
+        <div class="tile-img"><img alt=""></div>
+        <div class="tile-label">Street</div>
+      </a>
+      <a class="tile" href="architecture.html" data-series="architecture">
+        <div class="tile-img"><img alt=""></div>
+        <div class="tile-label">Architecture</div>
+      </a>
+      <a class="tile" href="sports.html" data-series="sports">
+        <div class="tile-img"><img alt=""></div>
+        <div class="tile-label">Sports</div>
+      </a>
+    </section>
 
-  <main id="gallery" class="gallery"></main>
+    <section class="section" id="about">
+      <h2>About</h2>
+      <p>[Short bio — Lalo to write]</p>
+      <p><a href="about.html">Read more</a></p>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p class="contact-line"><a href="mailto:eprosillo@gmail.com">eprosillo@gmail.com</a></p>
+      <p>Instagram: [Instagram handle — Lalo to add]</p>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <span>&copy; Lalo Rosillo</span>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="site.js"></script>
 </body>
 </html>

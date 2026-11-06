@@ -65,6 +65,84 @@ nav a:hover { color: var(--fg); }
   font-size: 0.875rem;
 }
 
+.filters {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 1.25rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filters button {
+  font: inherit;
+  font-size: 0.875rem;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid var(--muted);
+  border-radius: 999px;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.filters button[aria-pressed="true"] {
+  color: var(--bg);
+  background: var(--fg);
+  border-color: var(--fg);
+}
+
+.empty {
+  max-width: var(--max);
+  margin: 2rem auto;
+  padding: 0 1.25rem;
+  color: var(--muted);
+}
+
+.piece-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  z-index: 10;
+}
+
+.lightbox[hidden] { display: none; }
+
+.lightbox figure { margin: 0; text-align: center; color: #ccc; }
+
+.lightbox img {
+  max-width: 100%;
+  max-height: 85vh;
+  display: block;
+  margin: 0 auto;
+}
+
+.lightbox figcaption { font-size: 0.875rem; margin-top: 0.6rem; }
+
+.lightbox-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  font-size: 2rem;
+  line-height: 1;
+  color: #fff;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #111111;

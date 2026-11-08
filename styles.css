@@ -6,8 +6,13 @@
   --tile: #E6E1D8;
   --gutter: 20px;
   --max: 1200px;
-  --serif: "Instrument Serif", Georgia, serif;
-  --sans: Inter, system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  /* Type system. Neuzeit Grotesk and Alternate Gothic ATF come from the Adobe
+     Fonts kit (oug6fwr). Bebas Neue Pro is named first so it takes over once
+     added to that kit; until then Google's Bebas Neue is used. */
+  --display: "bebas-neue-pro", "Bebas Neue Pro", "Bebas Neue", Impact, sans-serif;            /* name, headers */
+  --body: "neuzeit-grotesk", "Helvetica Neue", Arial, sans-serif; /* body, contact (Adobe kit, Regular) */
+  --accent: "alternate-gothic-atf", "Arial Narrow", sans-serif; /* small headlines, labels (Adobe kit, Regular) */
+  --accent-thin: "alternate-gothic-atf-thin", var(--accent);    /* three-word lines (Adobe kit, Thin) */
 }
 
 * { box-sizing: border-box; }
@@ -16,13 +21,17 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--fg);
-  font-family: var(--sans);
-  font-size: 16px;
+  font-family: var(--body);
+  font-weight: 400;
+  font-size: 17px;
+  /* Google's Bebas Neue ships one (already heavy) weight; don't fake-bold it. */
+  font-synthesis-weight: none;
   line-height: 1.6;
 }
 
 a { color: inherit; }
-h1, h2 { font-family: var(--serif); font-weight: 400; }
+h1, h2 { font-family: var(--display); font-weight: 700; letter-spacing: 0.01em; }
+strong, b { font-weight: 700; }
 
 /* Header */
 .site-header {
@@ -37,15 +46,22 @@ h1, h2 { font-family: var(--serif); font-weight: 400; }
 }
 
 .site-name {
-  font-family: var(--serif);
-  font-size: 1.6rem;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
   text-decoration: none;
 }
 
 .site-nav { display: flex; gap: 28px; }
 
 .site-nav a {
-  font-size: 0.95rem;
+  font-family: var(--accent);
+  font-weight: 400;
+  font-size: 1.35rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: var(--muted);
   text-decoration: none;
 }
@@ -55,8 +71,11 @@ h1, h2 { font-family: var(--serif); font-weight: 400; }
 
 .nav-toggle {
   display: none;
-  font: inherit;
-  font-size: 0.95rem;
+  font-family: var(--accent);
+  font-weight: 400;
+  font-size: 1.25rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   background: none;
   border: 1px solid var(--rule);
   padding: 6px 14px;
@@ -100,9 +119,11 @@ h1, h2 { font-family: var(--serif); font-weight: 400; }
 .hero { padding: 64px 0 48px; }
 
 .opening {
-  font-family: var(--serif);
-  font-size: clamp(2rem, 5vw, 3.4rem);
-  line-height: 1.15;
+  font-family: var(--accent-thin);
+  font-weight: 100;
+  font-size: clamp(2.6rem, 7vw, 4.8rem);
+  line-height: 1.05;
+  text-transform: uppercase;
   margin: 0;
   max-width: 20ch;
 }
@@ -130,8 +151,11 @@ h1, h2 { font-family: var(--serif); font-weight: 400; }
 }
 
 .tile-label {
-  font-family: var(--serif);
-  font-size: 1.5rem;
+  font-family: var(--accent);
+  font-weight: 400;
+  font-size: 1.9rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   margin-top: 12px;
 }
 
@@ -144,20 +168,21 @@ h1, h2 { font-family: var(--serif); font-weight: 400; }
   padding: 48px 0;
 }
 
-.section h2 { font-size: 2rem; margin: 0 0 16px; }
+.section h2 { font-size: 2.4rem; line-height: 1; margin: 0 0 16px; }
 .section p { max-width: 60ch; margin: 0 0 16px; }
 
 .contact-line {
-  font-family: var(--serif);
-  font-size: 1.6rem;
+  font-family: var(--body);
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 /* Series pages */
 .series-head { padding: 48px 0 32px; }
 
 .series-head h1 {
-  font-size: clamp(2.4rem, 6vw, 4rem);
-  line-height: 1.05;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  line-height: 0.95;
   margin: 0 0 12px;
 }
 

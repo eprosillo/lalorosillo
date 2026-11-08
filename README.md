@@ -15,3 +15,14 @@ Portfolio site for Lalo Rosillo (LaloRosillo.com).
 3. Preview locally by opening `index.html` in a browser (or any static server).
 
 Originals (full-resolution masters) are not stored in this repo.
+
+## Where the photos live (outside the repo)
+
+- **Mac mini:** `~/Pictures/Portfolio/`
+  - `Exports/`: new selects exported from Lightroom or Capture One, sorted by series (Street, Architecture, Sports)
+  - `Ready-for-web/`: web-sized copies made from the exports (about 2,400 px). These are the files copied into `images/`.
+  - `Street/`, `Architecture/`, `Sports/`: the earlier catalog exports
+- **NAS:** full-resolution masters and the catalog
+- **Naming:** `Series_Year_Place_NN.jpg`, for example `Street_2025_Oaxaca_12.jpg`. The place becomes the caption location.
+
+To add photos: copy the web-sized files into `images/` with the same names, add an entry to `data/pieces.json` for each one, then commit and push.

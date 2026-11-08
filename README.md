@@ -4,7 +4,8 @@ Portfolio site for Lalo Rosillo (LaloRosillo.com).
 
 ## Structure
 
-- `index.html`, `styles.css`, `script.js`: the site
+- `index.html`, `about.html`, `contact.html`, `street.html`, `architecture.html`, `sports.html`: the pages
+- `styles.css`, `site.js`: shared styles and behavior
 - `data/pieces.json`: every piece in the portfolio (title, series, year, medium, image path)
 - `images/`: web-sized exports of selected pieces (about 2,000 to 2,400 px on the long edge)
 
@@ -12,7 +13,7 @@ Portfolio site for Lalo Rosillo (LaloRosillo.com).
 
 1. Add the exported image to `images/`.
 2. Add or remove an entry in `data/pieces.json`.
-3. Preview locally by opening `index.html` in a browser (or any static server).
+3. Preview locally with any static server (for example `python3 -m http.server`) and open `index.html`. Opening the file directly also works, but the photos load only over a server.
 
 Originals (full-resolution masters) are not stored in this repo.
 

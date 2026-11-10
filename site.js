@@ -59,6 +59,8 @@
       img.src = piece.image;
       img.alt = piece.alt || piece.title;
       img.loading = "lazy";
+      // Drop pieces whose image is missing rather than showing a broken icon
+      img.addEventListener("error", () => fig.remove());
       button.appendChild(img);
       button.addEventListener("click", () => openLightbox(piece));
       fig.appendChild(button);

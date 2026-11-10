@@ -459,3 +459,28 @@ strong, b { font-weight: 700; }
 
   .gallery-pause { height: 60dvh; }
 }
+
+
+/* Series index: list of the three series, shown in the left column on wide screens */
+.series-index { display: none; }
+
+@media (min-width: 900px) {
+  .series-index {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 40px;
+  }
+
+  .series-index a {
+    font-family: var(--accent);
+    font-size: 1.35rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  .series-index a:hover,
+  .series-index a[aria-current="page"] { color: var(--fg); }
+}

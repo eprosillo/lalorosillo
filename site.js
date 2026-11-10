@@ -57,6 +57,11 @@
       }
     }
 
+    // Mark the current series in the series index
+    document.querySelectorAll(".series-index a").forEach((a) => {
+      if (a.dataset.series === seriesId) a.setAttribute("aria-current", "page");
+    });
+
     let row = null;
     for (const [index, piece] of items.entries()) {
       const fig = document.createElement("figure");

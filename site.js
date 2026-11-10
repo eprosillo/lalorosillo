@@ -124,6 +124,17 @@
         step(1);
       }
     });
+    // Swipe left or right on phones to move between photos
+    let touchStartX = null;
+    lightbox.addEventListener("touchstart", (e) => {
+      touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+    lightbox.addEventListener("touchend", (e) => {
+      if (touchStartX === null) return;
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      touchStartX = null;
+      if (Math.abs(dx) > 40) step(dx < 0 ? 1 : -1);
+    });
     document.addEventListener("keydown", (e) => {
       if (!lightbox || lightbox.hidden) return;
       if (e.key === "Escape") closeLightbox();

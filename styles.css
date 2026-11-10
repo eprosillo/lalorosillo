@@ -358,3 +358,46 @@ strong, b { font-weight: 700; }
     grid-column: 2;
   }
 }
+
+
+/* Phones: each row shows two photos stacked, filling the screen; the next pair slides over */
+@media (max-width: 639px) {
+  .gallery-row {
+    position: sticky;
+    top: 88px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 12px;
+    height: calc(100vh - 88px);
+    height: calc(100svh - 88px);
+    padding: 12px 0;
+  }
+
+  .gallery-row .piece img {
+    width: 100%;
+    height: auto;
+    max-height: calc((100svh - 88px - 24px) / 2 - 48px);
+    object-fit: contain;
+  }
+
+  .lightbox img {
+    max-height: 72vh;
+  }
+
+  /* Larger previous and next controls along the bottom of the full view */
+  .lightbox-nav {
+    top: auto;
+    bottom: 16px;
+    transform: none;
+    min-width: 56px;
+    min-height: 48px;
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 4px;
+  }
+
+  .lightbox-prev { left: 16px; }
+  .lightbox-next { right: 16px; }
+}

@@ -371,15 +371,34 @@ strong, b { font-weight: 700; }
     align-items: center;
     gap: 12px;
     height: calc(100vh - 88px);
-    height: calc(100svh - 88px);
+    height: calc(100dvh - 88px);
     padding: 12px 0;
+  }
+
+  /* Each photo takes exactly half of the row; the photo scales to fit that half */
+  .gallery-row .piece {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .gallery-row .piece-button {
+    flex: 1 1 0;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .gallery-row .piece img {
     width: 100%;
-    height: auto;
-    max-height: calc((100svh - 88px - 24px) / 2 - 48px);
+    height: 100%;
+    min-height: 0;
     object-fit: contain;
+  }
+
+  .gallery-row .piece figcaption {
+    flex: none;
   }
 
   .lightbox img {

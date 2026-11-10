@@ -149,6 +149,23 @@ strong, b { font-weight: 700; }
   display: block;
 }
 
+/* Greyed out until hovered or focused. Only on devices that can hover, so
+   phones and tablets always show the photos in color. */
+@media (hover: hover) {
+  .tile-img img {
+    filter: grayscale(1) opacity(0.6);
+    transition: filter 0.4s ease;
+  }
+  .tile:hover .tile-img img,
+  .tile:focus-visible .tile-img img {
+    filter: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tile-img img { transition: none; }
+}
+
 .tile-label {
   font-family: var(--accent);
   font-weight: 400;

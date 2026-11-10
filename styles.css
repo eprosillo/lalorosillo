@@ -205,20 +205,26 @@ strong, b { font-weight: 700; }
 .note { color: var(--muted); max-width: 60ch; margin: 0; }
 
 .gallery {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
+  columns: 1;
+  column-gap: 20px;
   padding-bottom: 80px;
 }
 
 @media (min-width: 640px) {
-  .gallery {
-    grid-template-columns: 1fr 1fr;
-    gap: 28px 20px;
-  }
+  .gallery { columns: 2; }
 }
 
-.piece { margin: 0; }
+.piece {
+  margin: 0 0 40px;
+  break-inside: avoid;
+}
+
+.piece-button:hover img,
+.piece-button:focus-visible img { opacity: 0.85; }
+
+.piece-button:focus-visible { outline: 2px solid var(--fg); outline-offset: 4px; }
+
+.piece img { transition: opacity 0.3s ease; }
 
 .piece-button {
   display: block;

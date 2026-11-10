@@ -420,3 +420,13 @@ strong, b { font-weight: 700; }
   .lightbox-prev { left: 16px; }
   .lightbox-next { right: 16px; }
 }
+
+
+/* Pause after each pinned row before the next one moves in */
+.gallery-pause {
+  height: 60dvh;
+}
+
+@media (min-width: 640px) {
+  .gallery-pause { height: 60vh; }
+}

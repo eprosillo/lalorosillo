@@ -83,9 +83,16 @@
 
       // Photos sit in pairs; each pair is one row that the next row slides over
       if (index % 2 === 0) {
+        // Each row sits in its own slot, followed by a pause, so it stays pinned a little longer
+        const slot = document.createElement("div");
+        slot.className = "gallery-slot";
         row = document.createElement("div");
         row.className = "gallery-row";
-        gallery.appendChild(row);
+        slot.appendChild(row);
+        const pause = document.createElement("div");
+        pause.className = "gallery-pause";
+        slot.appendChild(pause);
+        gallery.appendChild(slot);
       }
       row.appendChild(fig);
     }

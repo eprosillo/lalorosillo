@@ -205,19 +205,26 @@ strong, b { font-weight: 700; }
 .note { color: var(--muted); max-width: 60ch; margin: 0; }
 
 .gallery {
-  columns: 1;
-  column-gap: 20px;
   padding-bottom: 80px;
 }
 
-@media (min-width: 640px) {
-  .gallery { columns: 2; }
+/* Each row of two photos sticks to the top of the screen; the next row slides over it */
+.gallery-row {
+  position: sticky;
+  top: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 0 0 24px;
+  margin-bottom: 40px;
+  background: var(--bg);
 }
 
-.piece {
-  margin: 0 0 40px;
-  break-inside: avoid;
+@media (min-width: 640px) {
+  .gallery-row { grid-template-columns: 1fr 1fr; }
 }
+
+.piece { margin: 0; }
 
 .piece-button:hover img,
 .piece-button:focus-visible img { opacity: 0.85; }

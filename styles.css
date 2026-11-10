@@ -315,3 +315,24 @@ strong, b { font-weight: 700; }
   border: 0;
   cursor: pointer;
 }
+
+/* Series pages: on wide screens the title and note stay pinned on the left while the photos scroll */
+@media (min-width: 900px) {
+  .series-wrap {
+    display: grid;
+    grid-template-columns: minmax(220px, 1fr) 2fr;
+    column-gap: 48px;
+    align-items: start;
+  }
+
+  .series-wrap .series-head {
+    position: sticky;
+    top: 24px;
+    padding-top: 56px;
+  }
+
+  .series-wrap .gallery,
+  .series-wrap .empty {
+    grid-column: 2;
+  }
+}

@@ -422,11 +422,10 @@ strong, b { font-weight: 700; }
 }
 
 
-/* Pause after each pinned row before the next one moves in */
-.gallery-pause {
-  height: 60dvh;
-}
-
+/* Pause after each pinned row before the next one moves in (desktop only) */
 @media (min-width: 640px) {
   .gallery-pause { height: 60vh; }
 }
+
+/* Phones: no pause, so the next pair does not slide over the pinned pair */
+.gallery-pause { display: none; }

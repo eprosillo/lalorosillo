@@ -57,7 +57,8 @@
       }
     }
 
-    for (const piece of items) {
+    let row = null;
+    for (const [index, piece] of items.entries()) {
       const fig = document.createElement("figure");
       fig.className = "piece";
 
@@ -80,7 +81,13 @@
       cap.textContent = captionFor(piece);
       fig.appendChild(cap);
 
-      gallery.appendChild(fig);
+      // Photos sit in pairs; each pair is one row that the next row slides over
+      if (index % 2 === 0) {
+        row = document.createElement("div");
+        row.className = "gallery-row";
+        gallery.appendChild(row);
+      }
+      row.appendChild(fig);
     }
   }
 

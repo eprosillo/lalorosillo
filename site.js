@@ -62,7 +62,7 @@
       // Drop pieces whose image is missing rather than showing a broken icon
       img.addEventListener("error", () => fig.remove());
       button.appendChild(img);
-      button.addEventListener("click", () => openLightbox(piece));
+      button.addEventListener("click", () => openLightbox(items, items.indexOf(piece)));
       fig.appendChild(button);
 
       const cap = document.createElement("figcaption");
@@ -77,8 +77,9 @@
     return [piece.title, piece.location].filter(Boolean).join(", ");
   }
 
-  // Lightbox
+  // Lightbox: enlarged view with previous/next within the current series
   let lightbox = null;
+  let current = { list: [], index: 0 };
 
   function ensureLightbox() {
     if (lightbox) return lightbox;
@@ -87,30 +88,61 @@
     lightbox.hidden = true;
     lightbox.innerHTML = `
       <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+      <button type="button" class="lightbox-nav lightbox-prev" aria-label="Previous photograph">&#8249;</button>
       <figure>
         <img alt="">
         <figcaption></figcaption>
-      </figure>`;
+      </figure>
+      <button type="button" class="lightbox-nav lightbox-next" aria-label="Next photograph">&#8250;</button>`;
     document.body.appendChild(lightbox);
 
     lightbox.addEventListener("click", (e) => {
-      if (e.target === lightbox || e.target.classList.contains("lightbox-close")) {
-        lightbox.hidden = true;
+      const t = e.target;
+      if (t === lightbox || t.classList.contains("lightbox-close")) {
+        closeLightbox();
+      } else if (t.classList.contains("lightbox-prev")) {
+        step(-1);
+      } else if (t.classList.contains("lightbox-next")) {
+        step(1);
       }
     });
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && lightbox && !lightbox.hidden) lightbox.hidden = true;
+      if (!lightbox || lightbox.hidden) return;
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowLeft") step(-1);
+      if (e.key === "ArrowRight") step(1);
     });
     return lightbox;
   }
 
-  function openLightbox(piece) {
+  function openLightbox(list, index) {
+    current = { list, index };
     const box = ensureLightbox();
+    show();
+    box.hidden = false;
+    box.querySelector(".lightbox-close").focus();
+  }
+
+  function closeLightbox() {
+    if (lightbox) lightbox.hidden = true;
+  }
+
+  function step(delta) {
+    const n = current.list.length;
+    if (n < 2) return;
+    current.index = (current.index + delta + n) % n;
+    show();
+  }
+
+  function show() {
+    const box = lightbox;
+    const piece = current.list[current.index];
     const img = box.querySelector("img");
     img.src = piece.image;
     img.alt = piece.alt || piece.title;
     box.querySelector("figcaption").textContent = captionFor(piece);
-    box.hidden = false;
-    box.querySelector(".lightbox-close").focus();
+    const multiple = current.list.length > 1;
+    box.querySelector(".lightbox-prev").hidden = !multiple;
+    box.querySelector(".lightbox-next").hidden = !multiple;
   }
 })();

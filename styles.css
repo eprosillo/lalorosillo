@@ -270,6 +270,23 @@ strong, b { font-weight: 700; }
 
 .lightbox[hidden] { display: none; }
 
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  line-height: 1;
+  color: #fff;
+  background: none;
+  border: 0;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.lightbox-nav[hidden] { display: none; }
+.lightbox-prev { left: 0; }
+.lightbox-next { right: 0; }
+
 .lightbox figure { margin: 0; text-align: center; color: #d8d3c8; }
 
 .lightbox img {

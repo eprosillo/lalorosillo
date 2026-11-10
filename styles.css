@@ -427,5 +427,35 @@ strong, b { font-weight: 700; }
   .gallery-pause { height: 60vh; }
 }
 
-/* Phones: no pause, so the next pair does not slide over the pinned pair */
-.gallery-pause { display: none; }
+
+/* Phones: two photos per screen, each in a fixed half of the pinned row, with a pause after the row */
+@media (max-width: 639px) {
+  .gallery-row {
+    --row-h: calc(100dvh - 88px - 24px);
+    height: calc(100dvh - 88px);
+    padding: 12px 0;
+    grid-template-rows: none;
+    grid-template-columns: 1fr;
+    align-content: center;
+    gap: 12px;
+    overflow: hidden;
+  }
+
+  .gallery-row .piece {
+    height: calc((var(--row-h) - 12px) / 2);
+    overflow: hidden;
+  }
+
+  .gallery-row .piece-button {
+    flex: none;
+    height: calc((var(--row-h) - 12px) / 2 - 40px);
+  }
+
+  .gallery-row .piece img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .gallery-pause { height: 60dvh; }
+}

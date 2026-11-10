@@ -371,14 +371,14 @@ strong, b { font-weight: 700; }
     align-items: center;
     gap: 12px;
     height: calc(100vh - 88px);
-    height: calc(100svh - 88px);
+    height: calc(100dvh - 88px);
     padding: 12px 0;
   }
 
   .gallery-row .piece img {
     width: 100%;
     height: auto;
-    max-height: calc((100svh - 88px - 24px) / 2 - 48px);
+    max-height: calc((100dvh - 88px - 24px) / 2 - 48px);
     object-fit: contain;
   }
 

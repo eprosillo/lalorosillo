@@ -46,6 +46,17 @@
     const items = data.pieces.filter((p) => p.series === seriesId);
     if (empty) empty.hidden = items.length > 0;
 
+    // Series note: use the text from pieces.json, or remove the line while it's still a placeholder
+    const note = document.querySelector(".note");
+    const info = data.series.find((x) => x.id === seriesId);
+    if (note) {
+      if (info && info.note && !info.note.startsWith("[")) {
+        note.textContent = info.note;
+      } else {
+        note.remove();
+      }
+    }
+
     for (const piece of items) {
       const fig = document.createElement("figure");
       fig.className = "piece";

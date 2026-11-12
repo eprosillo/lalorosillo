@@ -370,6 +370,23 @@ body[data-page="home"] .wrap { max-width: 1440px; }
 /* Series pages: the photos use the full width of the screen */
 body[data-series] .wrap { max-width: none; }
 
+/* Series pages: the top menu spans the full width in black, so photos scrolling
+   underneath never show at its sides */
+body[data-series] .site-header {
+  max-width: none;
+  background: #000;
+}
+
+/* Series title is kept for screen readers but not shown above the gallery */
+body[data-series] .series-head h1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
 
 /* Phones: each row shows two photos stacked, filling the screen; the next pair slides over */
 @media (max-width: 639px) {

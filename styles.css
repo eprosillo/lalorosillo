@@ -180,6 +180,32 @@ strong, b { font-weight: 700; }
   margin-top: 12px;
 }
 
+/* Home tiles: title centered over the photo, shown on hover only */
+.tile-img { position: relative; }
+
+.tile-img .tile-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 16px;
+  text-align: center;
+  color: #F4F1EC;
+  background: rgba(20, 20, 19, 0.35);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.tile:hover .tile-label,
+.tile:focus-visible .tile-label { opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  .tile-img .tile-label { transition: none; }
+}
+
 @media (max-width: 800px) {
   .tiles { grid-template-columns: 1fr; }
 }

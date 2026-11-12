@@ -121,6 +121,7 @@ strong, b { font-weight: 700; }
 }
 
 /* Home */
+body[data-page="home"] .wrap { max-width: 1440px; }
 
 .opening {
   font-family: var(--accent-thin);
@@ -133,7 +134,7 @@ strong, b { font-weight: 700; }
 
 .tiles {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   padding-top: 32px;
   padding-bottom: 64px;

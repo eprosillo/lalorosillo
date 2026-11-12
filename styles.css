@@ -476,8 +476,19 @@ body[data-series] .wrap { max-width: none; }
 .series-index {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 12px 32px;
-  padding-top: 32px;
+  position: sticky;
+  top: 88px;
+  z-index: 15;
+  background: var(--bg);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* Stays frozen under the top menu on wide screens, where the header is taller */
+@media (min-width: 641px) {
+  .series-index { top: 120px; }
 }
 
 .series-index a {
@@ -489,8 +500,12 @@ body[data-series] .wrap { max-width: none; }
   text-decoration: none;
 }
 
-.series-index a:hover,
-.series-index a[aria-current="page"] { color: var(--fg); }
+.series-index a:hover { color: var(--fg); }
+
+.series-index a[aria-current="page"] {
+  color: var(--fg);
+  font-weight: 700;
+}
 
 /* Palette: series pages go dark so the photos stand out; the home page stays light */
 :root {

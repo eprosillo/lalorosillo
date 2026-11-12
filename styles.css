@@ -484,3 +484,20 @@ strong, b { font-weight: 700; }
   .series-index a:hover,
   .series-index a[aria-current="page"] { color: var(--fg); }
 }
+
+/* Palette: series pages go dark so the photos stand out; the home page stays light */
+:root {
+  --accent-color: #B8794A; /* single restrained accent: current series and hover states */
+}
+
+body[data-series] {
+  --bg: #141413;
+  --fg: #F4F1EC;
+  --muted: #9C978C;
+  --rule: #3A3834;
+  --tile: #222220;
+  color-scheme: dark;
+}
+
+.series-index a:hover,
+.series-index a[aria-current="page"] { color: var(--accent-color); }

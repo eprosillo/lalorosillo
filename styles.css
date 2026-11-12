@@ -350,7 +350,7 @@ strong, b { font-weight: 700; }
 
   .series-wrap .series-head {
     position: sticky;
-    top: 112px;
+    top: 144px;
     padding-top: 56px;
   }
 
@@ -608,4 +608,36 @@ h1, h2,
 
 @media (min-width: 1400px) {
   .gallery { columns: 4; column-gap: 16px; }
+}
+
+
+/* Minimal header on wide screens: centered, tracked wordmark over a small uppercase menu */
+@media (min-width: 641px) {
+  .site-header {
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    height: 120px;
+    padding: 0 var(--gutter);
+  }
+
+  .site-name {
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .site-nav { gap: 32px; }
+
+  .site-nav a {
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .site-nav a[aria-current="page"] {
+    color: var(--fg);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+  }
 }

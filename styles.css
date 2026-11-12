@@ -515,7 +515,7 @@ body[data-series] .series-head h1 {
 
 /* Stays frozen under the top menu on wide screens, where the header is taller */
 @media (min-width: 641px) {
-  .series-index { top: 120px; }
+  .series-index { top: 176px; }
 }
 
 .series-index a {
@@ -724,4 +724,35 @@ h1, h2,
 
 @media (prefers-reduced-motion: reduce) {
   .piece-title { transition: none; }
+}
+
+
+/* Logo: stacked condensed wordmark at the top left, as on the old portfolio */
+.site-name {
+  font-family: "Bebas Neue", "Arial Narrow", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 0.86;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--fg);
+  text-decoration: none;
+}
+
+@media (min-width: 641px) {
+  .site-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 176px;
+    padding-top: 36px;
+    padding-bottom: 20px;
+  }
+
+  .site-name {
+    font-size: 4.2rem;
+    letter-spacing: 0.01em;
+  }
+
+  .site-nav { margin-top: 10px; }
 }

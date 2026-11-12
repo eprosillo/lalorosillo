@@ -95,6 +95,14 @@
       // Drop pieces whose image is missing rather than showing a broken icon
       img.addEventListener("error", () => fig.remove());
       button.appendChild(img);
+
+      // Title shown centered over the photo on hover (skipped for untitled pieces)
+      if (piece.title && piece.title.toLowerCase() !== "untitled") {
+        const label = document.createElement("span");
+        label.className = "piece-title";
+        label.textContent = piece.title;
+        button.appendChild(label);
+      }
       button.addEventListener("click", () => openLightbox(items, items.indexOf(piece)));
       fig.appendChild(button);
 

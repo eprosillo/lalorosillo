@@ -9,7 +9,7 @@
   /* Type system. Neuzeit Grotesk and Alternate Gothic ATF come from the Adobe
      Fonts kit (oug6fwr). Bebas Neue Pro is named first so it takes over once
      added to that kit; until then Google's Bebas Neue is used. */
-  --display: "Archivo", "Helvetica Neue", Arial, sans-serif; /* name, headers (Google Fonts, condensed width) */
+  --display: "Instrument Serif", Georgia, serif; /* name, headings: editorial serif */
   --body: "neuzeit-grotesk", "Helvetica Neue", Arial, sans-serif; /* body, contact (Adobe kit, Regular) */
   --accent: var(--body); /* small labels, nav: Neuzeit */
   --accent-thin: var(--body); /* opening line: Neuzeit */
@@ -546,3 +546,27 @@ h1, h2 { font-stretch: 80%; font-weight: 700; letter-spacing: 0; }
 .series-index a { font-size: 1.1rem; letter-spacing: 0; text-transform: none; }
 .piece figcaption,
 .lightbox figcaption { font-family: var(--mono); font-size: 0.8rem; letter-spacing: 0; }
+
+
+/* Classy: serif headings and name, tracked mono labels, quieter details */
+h1, h2,
+.site-name,
+.tile-label {
+  font-family: var(--display);
+  font-weight: 400;
+  font-stretch: normal;
+  letter-spacing: 0;
+}
+
+.site-name { font-size: 2rem; }
+
+.tile-label { font-size: 1.7rem; text-transform: none; }
+
+.series-index a {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.site-nav a { letter-spacing: 0.02em; }

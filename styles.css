@@ -121,7 +121,6 @@ strong, b { font-weight: 700; }
 }
 
 /* Home */
-.hero { padding: 64px 0 48px; }
 
 .opening {
   font-family: var(--accent-thin);
@@ -134,8 +133,9 @@ strong, b { font-weight: 700; }
 
 .tiles {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding-top: 32px;
   padding-bottom: 64px;
 }
 
@@ -207,7 +207,7 @@ strong, b { font-weight: 700; }
 }
 
 @media (max-width: 800px) {
-  .tiles { grid-template-columns: 1fr; }
+  .tiles { grid-template-columns: 1fr; gap: 32px; }
 }
 
 .section {

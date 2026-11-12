@@ -570,3 +570,31 @@ h1, h2,
 }
 
 .site-nav a { letter-spacing: 0.02em; }
+
+
+/* Series galleries: a flowing masonry of photos, each keeping its own shape; no pinned pairs */
+.gallery {
+  columns: 1;
+  column-gap: 24px;
+  padding-bottom: 96px;
+}
+
+@media (min-width: 640px) {
+  .gallery { columns: 2; column-gap: 40px; }
+}
+
+.gallery .piece {
+  break-inside: avoid;
+  margin: 0 0 40px;
+}
+
+.gallery .piece-button,
+.gallery .piece-button img {
+  height: auto;
+  max-height: none;
+}
+
+.gallery .piece img {
+  width: 100%;
+  object-fit: contain;
+}

@@ -241,8 +241,8 @@ strong, b { font-weight: 700; }
   }
 }
 
-.piece-button:hover img,
-.piece-button:focus-visible img { opacity: 0.85; }
+.piece-button:hover img.loaded,
+.piece-button:focus-visible img.loaded { opacity: 0.85; }
 
 .piece-button:focus-visible { outline: 2px solid var(--fg); outline-offset: 4px; }
 
@@ -501,3 +501,28 @@ body[data-series] {
 
 .series-index a:hover,
 .series-index a[aria-current="page"] { color: var(--accent-color); }
+
+
+/* Loading: photos fade in over their blurred preview; each pair fades in as it scrolls into view */
+.piece-button img { opacity: 0; transition: opacity 0.6s ease; }
+.piece-button img.loaded { opacity: 1; }
+
+.piece {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.piece.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .piece,
+  .piece-button img {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

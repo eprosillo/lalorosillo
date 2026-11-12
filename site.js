@@ -62,6 +62,16 @@
       if (a.dataset.series === seriesId) a.setAttribute("aria-current", "page");
     });
 
+    // Fade each pair in as it scrolls into view
+    const reveal = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          reveal.unobserve(entry.target);
+        }
+      }
+    }, { threshold: 0.15 });
+
     let row = null;
     for (const [index, piece] of items.entries()) {
       const fig = document.createElement("figure");
@@ -72,10 +82,17 @@
       button.className = "piece-button";
       button.setAttribute("aria-label", `Enlarge ${piece.title}`);
 
+      // Show a tiny blurred preview first, then fade the full photo in when it loads
+      button.style.backgroundImage = `url("${piece.image.replace("images/", "images/previews/")}")`;
+      button.style.backgroundSize = "contain";
+      button.style.backgroundRepeat = "no-repeat";
+      button.style.backgroundPosition = "center";
+
       const img = document.createElement("img");
       img.src = piece.image;
       img.alt = piece.alt || piece.title;
       img.loading = "lazy";
+      img.addEventListener("load", () => img.classList.add("loaded"));
       // Drop pieces whose image is missing rather than showing a broken icon
       img.addEventListener("error", () => fig.remove());
       button.appendChild(img);
@@ -100,6 +117,7 @@
         gallery.appendChild(slot);
       }
       row.appendChild(fig);
+      reveal.observe(fig);
     }
   }
 

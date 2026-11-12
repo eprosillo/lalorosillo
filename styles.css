@@ -598,3 +598,14 @@ h1, h2,
   width: 100%;
   object-fit: contain;
 }
+
+
+/* Denser masonry, closer to the reference: more columns and tighter gutters on wide screens */
+@media (min-width: 900px) {
+  .gallery { columns: 3; column-gap: 16px; }
+  .gallery .piece { margin: 0 0 16px; }
+}
+
+@media (min-width: 1400px) {
+  .gallery { columns: 4; column-gap: 16px; }
+}

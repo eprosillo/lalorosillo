@@ -9,10 +9,11 @@
   /* Type system. Neuzeit Grotesk and Alternate Gothic ATF come from the Adobe
      Fonts kit (oug6fwr). Bebas Neue Pro is named first so it takes over once
      added to that kit; until then Google's Bebas Neue is used. */
-  --display: "bebas-neue-pro", "Bebas Neue Pro", "Bebas Neue", Impact, sans-serif;            /* name, headers */
+  --display: "Archivo", "Helvetica Neue", Arial, sans-serif; /* name, headers (Google Fonts, condensed width) */
   --body: "neuzeit-grotesk", "Helvetica Neue", Arial, sans-serif; /* body, contact (Adobe kit, Regular) */
-  --accent: "alternate-gothic-atf", "Arial Narrow", sans-serif; /* small headlines, labels (Adobe kit, Regular) */
-  --accent-thin: "alternate-gothic-atf-thin", var(--accent);    /* three-word lines (Adobe kit, Thin) */
+  --accent: var(--body); /* small labels, nav: Neuzeit */
+  --accent-thin: var(--body); /* opening line: Neuzeit */
+  --mono: "IBM Plex Mono", ui-monospace, monospace; /* captions and details */
 }
 
 * { box-sizing: border-box; }
@@ -526,3 +527,22 @@ body[data-series] {
     transition: none;
   }
 }
+
+
+/* Type: Archivo for headings and the name, Neuzeit for text, IBM Plex Mono for captions */
+h1, h2 { font-stretch: 80%; font-weight: 700; letter-spacing: 0; }
+.site-name { font-size: 1.8rem; font-stretch: 80%; letter-spacing: 0; }
+.site-nav a,
+.nav-toggle { font-size: 1rem; letter-spacing: 0; text-transform: none; }
+.opening { font-weight: 400; }
+.tile-label {
+  font-family: var(--display);
+  font-weight: 600;
+  font-stretch: 80%;
+  font-size: 1.4rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.series-index a { font-size: 1.1rem; letter-spacing: 0; text-transform: none; }
+.piece figcaption,
+.lightbox figcaption { font-family: var(--mono); font-size: 0.8rem; letter-spacing: 0; }

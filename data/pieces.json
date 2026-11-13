@@ -35,6 +35,15 @@
       "alt": "Architecture photograph, Austin, Texas"
     },
     {
+      "id": "architecture-2026-austin-02",
+      "series": "architecture",
+      "title": "",
+      "location": "Austin, Texas",
+      "year": 2026,
+      "image": "images/Architecture_2026_Austin_02.jpg",
+      "alt": "Architecture photograph, Austin, Texas"
+    },
+    {
       "id": "architecture-2026-austin-03",
       "series": "architecture",
       "title": "",
@@ -62,6 +71,15 @@
       "alt": "Architecture photograph, Austin, Texas"
     },
     {
+      "id": "architecture-2026-austin-10",
+      "series": "architecture",
+      "title": "",
+      "location": "Austin, Texas",
+      "year": 2026,
+      "image": "images/Architecture_2026_Austin_10.jpg",
+      "alt": "Architecture photograph, Austin, Texas"
+    },
+    {
       "id": "architecture-2026-boston-04",
       "series": "architecture",
       "title": "",
@@ -77,6 +95,15 @@
       "location": "Boston, Massachusetts",
       "year": 2026,
       "image": "images/Architecture_2026_Boston_06.jpg",
+      "alt": "Architecture photograph, Boston, Massachusetts"
+    },
+    {
+      "id": "architecture-2026-boston-07",
+      "series": "architecture",
+      "title": "",
+      "location": "Boston, Massachusetts",
+      "year": 2026,
+      "image": "images/Architecture_2026_Boston_07.jpg",
       "alt": "Architecture photograph, Boston, Massachusetts"
     },
     {
@@ -98,6 +125,15 @@
       "alt": "Architecture photograph, Boston, Massachusetts"
     },
     {
+      "id": "architecture-2026-boston-14",
+      "series": "architecture",
+      "title": "",
+      "location": "Boston, Massachusetts",
+      "year": 2026,
+      "image": "images/Architecture_2026_Boston_14.jpg",
+      "alt": "Architecture photograph, Boston, Massachusetts"
+    },
+    {
       "id": "architecture-2026-boston-17",
       "series": "architecture",
       "title": "",
@@ -113,6 +149,33 @@
       "location": "Boston, Massachusetts",
       "year": 2026,
       "image": "images/Architecture_2026_Boston_18.jpg",
+      "alt": "Architecture photograph, Boston, Massachusetts"
+    },
+    {
+      "id": "architecture-2026-boston-20",
+      "series": "architecture",
+      "title": "",
+      "location": "Boston, Massachusetts",
+      "year": 2026,
+      "image": "images/Architecture_2026_Boston_20.jpg",
+      "alt": "Architecture photograph, Boston, Massachusetts"
+    },
+    {
+      "id": "architecture-2026-boston-21",
+      "series": "architecture",
+      "title": "",
+      "location": "Boston, Massachusetts",
+      "year": 2026,
+      "image": "images/Architecture_2026_Boston_21.jpg",
+      "alt": "Architecture photograph, Boston, Massachusetts"
+    },
+    {
+      "id": "architecture-2026-boston-22",
+      "series": "architecture",
+      "title": "",
+      "location": "Boston, Massachusetts",
+      "year": 2026,
+      "image": "images/Architecture_2026_Boston_22.jpg",
       "alt": "Architecture photograph, Boston, Massachusetts"
     },
     {
@@ -134,6 +197,15 @@
       "alt": "Architecture photograph, Guanajuato, Mexico"
     },
     {
+      "id": "architecture-2026-gto-02",
+      "series": "architecture",
+      "title": "",
+      "location": "Guanajuato, Mexico",
+      "year": 2026,
+      "image": "images/Architecture_2026_GTO_02.jpg",
+      "alt": "Architecture photograph, Guanajuato, Mexico"
+    },
+    {
       "id": "architecture-2026-gto-03",
       "series": "architecture",
       "title": "",
@@ -143,12 +215,39 @@
       "alt": "Architecture photograph, Guanajuato, Mexico"
     },
     {
+      "id": "architecture-2026-gto-04",
+      "series": "architecture",
+      "title": "",
+      "location": "Guanajuato, Mexico",
+      "year": 2026,
+      "image": "images/Architecture_2026_GTO_04.jpg",
+      "alt": "Architecture photograph, Guanajuato, Mexico"
+    },
+    {
       "id": "architecture-2026-oaxaca-01",
       "series": "architecture",
       "title": "",
       "location": "Oaxaca, Mexico",
       "year": 2026,
       "image": "images/Architecture_2026_Oaxaca_01.jpg",
+      "alt": "Architecture photograph, Oaxaca, Mexico"
+    },
+    {
+      "id": "architecture-2026-oaxaca-02",
+      "series": "architecture",
+      "title": "",
+      "location": "Oaxaca, Mexico",
+      "year": 2026,
+      "image": "images/Architecture_2026_Oaxaca_02.jpg",
+      "alt": "Architecture photograph, Oaxaca, Mexico"
+    },
+    {
+      "id": "architecture-2026-oaxaca-03",
+      "series": "architecture",
+      "title": "",
+      "location": "Oaxaca, Mexico",
+      "year": 2026,
+      "image": "images/Architecture_2026_Oaxaca_03.jpg",
       "alt": "Architecture photograph, Oaxaca, Mexico"
     },
     {
@@ -170,6 +269,33 @@
       "alt": "Architecture photograph, Oaxaca, Mexico"
     },
     {
+      "id": "architecture-2026-oaxaca-07",
+      "series": "architecture",
+      "title": "",
+      "location": "Oaxaca, Mexico",
+      "year": 2026,
+      "image": "images/Architecture_2026_Oaxaca_07.jpg",
+      "alt": "Architecture photograph, Oaxaca, Mexico"
+    },
+    {
+      "id": "architecture-2026-oaxaca-10",
+      "series": "architecture",
+      "title": "",
+      "location": "Oaxaca, Mexico",
+      "year": 2026,
+      "image": "images/Architecture_2026_Oaxaca_10.jpg",
+      "alt": "Architecture photograph, Oaxaca, Mexico"
+    },
+    {
+      "id": "architecture-2026-oaxaca-11",
+      "series": "architecture",
+      "title": "",
+      "location": "Oaxaca, Mexico",
+      "year": 2026,
+      "image": "images/Architecture_2026_Oaxaca_11.jpg",
+      "alt": "Architecture photograph, Oaxaca, Mexico"
+    },
+    {
       "id": "architecture-2026-oaxaca-12",
       "series": "architecture",
       "title": "",
@@ -179,12 +305,57 @@
       "alt": "Architecture photograph, Oaxaca, Mexico"
     },
     {
+      "id": "architecture-2026-oaxaca-14",
+      "series": "architecture",
+      "title": "",
+      "location": "Oaxaca, Mexico",
+      "year": 2026,
+      "image": "images/Architecture_2026_Oaxaca_14.jpg",
+      "alt": "Architecture photograph, Oaxaca, Mexico"
+    },
+    {
+      "id": "architecture-2026-queretaro-01",
+      "series": "architecture",
+      "title": "",
+      "location": "Querétaro, Mexico",
+      "year": 2026,
+      "image": "images/Architecture_2026_Queretaro_01.jpg",
+      "alt": "Architecture photograph, Querétaro, Mexico"
+    },
+    {
+      "id": "architecture-2026-queretaro-04",
+      "series": "architecture",
+      "title": "",
+      "location": "Querétaro, Mexico",
+      "year": 2026,
+      "image": "images/Architecture_2026_Queretaro_04.jpg",
+      "alt": "Architecture photograph, Querétaro, Mexico"
+    },
+    {
       "id": "architecture-2026-queretaro-05",
       "series": "architecture",
       "title": "",
       "location": "Querétaro, Mexico",
       "year": 2026,
       "image": "images/Architecture_2026_Queretaro_05.jpg",
+      "alt": "Architecture photograph, Querétaro, Mexico"
+    },
+    {
+      "id": "architecture-2026-queretaro-06",
+      "series": "architecture",
+      "title": "",
+      "location": "Querétaro, Mexico",
+      "year": 2026,
+      "image": "images/Architecture_2026_Queretaro_06.jpg",
+      "alt": "Architecture photograph, Querétaro, Mexico"
+    },
+    {
+      "id": "architecture-2026-queretaro-07",
+      "series": "architecture",
+      "title": "",
+      "location": "Querétaro, Mexico",
+      "year": 2026,
+      "image": "images/Architecture_2026_Queretaro_07.jpg",
       "alt": "Architecture photograph, Querétaro, Mexico"
     },
     {
@@ -206,12 +377,30 @@
       "alt": "Architecture photograph, Querétaro, Mexico"
     },
     {
+      "id": "architecture-2026-queretaro-10",
+      "series": "architecture",
+      "title": "",
+      "location": "Querétaro, Mexico",
+      "year": 2026,
+      "image": "images/Architecture_2026_Queretaro_10.jpg",
+      "alt": "Architecture photograph, Querétaro, Mexico"
+    },
+    {
       "id": "sports-2024-austin-01",
       "series": "sports",
       "title": "",
       "location": "Austin, Texas",
       "year": 2024,
       "image": "images/Sports_2024_Austin_01.jpg",
+      "alt": "Sports photograph, Austin, Texas"
+    },
+    {
+      "id": "sports-2024-austin-02",
+      "series": "sports",
+      "title": "",
+      "location": "Austin, Texas",
+      "year": 2024,
+      "image": "images/Sports_2024_Austin_02.jpg",
       "alt": "Sports photograph, Austin, Texas"
     },
     {
@@ -224,6 +413,15 @@
       "alt": "Sports photograph, Austin, Texas"
     },
     {
+      "id": "sports-2024-austin-04",
+      "series": "sports",
+      "title": "",
+      "location": "Austin, Texas",
+      "year": 2024,
+      "image": "images/Sports_2024_Austin_04.jpg",
+      "alt": "Sports photograph, Austin, Texas"
+    },
+    {
       "id": "sports-2024-austin-05",
       "series": "sports",
       "title": "",
@@ -233,12 +431,30 @@
       "alt": "Sports photograph, Austin, Texas"
     },
     {
+      "id": "sports-2024-austin-06",
+      "series": "sports",
+      "title": "",
+      "location": "Austin, Texas",
+      "year": 2024,
+      "image": "images/Sports_2024_Austin_06.jpg",
+      "alt": "Sports photograph, Austin, Texas"
+    },
+    {
       "id": "sports-2024-austin-07",
       "series": "sports",
       "title": "",
       "location": "Austin, Texas",
       "year": 2024,
       "image": "images/Sports_2024_Austin_07.jpg",
+      "alt": "Sports photograph, Austin, Texas"
+    },
+    {
+      "id": "sports-2024-austin-08",
+      "series": "sports",
+      "title": "",
+      "location": "Austin, Texas",
+      "year": 2024,
+      "image": "images/Sports_2024_Austin_08.jpg",
       "alt": "Sports photograph, Austin, Texas"
     },
     {
@@ -257,6 +473,24 @@
       "location": "Austin, Texas",
       "year": 2024,
       "image": "images/Sports_2024_Austin_10.jpg",
+      "alt": "Sports photograph, Austin, Texas"
+    },
+    {
+      "id": "sports-2024-austin-11",
+      "series": "sports",
+      "title": "",
+      "location": "Austin, Texas",
+      "year": 2024,
+      "image": "images/Sports_2024_Austin_11.jpg",
+      "alt": "Sports photograph, Austin, Texas"
+    },
+    {
+      "id": "sports-2024-austin-12",
+      "series": "sports",
+      "title": "",
+      "location": "Austin, Texas",
+      "year": 2024,
+      "image": "images/Sports_2024_Austin_12.jpg",
       "alt": "Sports photograph, Austin, Texas"
     },
     {
@@ -332,6 +566,33 @@
       "alt": "Street photograph, Boston, Massachusetts"
     },
     {
+      "id": "street-2025-boston-04",
+      "series": "street",
+      "title": "",
+      "location": "Boston, Massachusetts",
+      "year": 2025,
+      "image": "images/Street_2025_Boston_04.jpg",
+      "alt": "Street photograph, Boston, Massachusetts"
+    },
+    {
+      "id": "street-2025-boston-05",
+      "series": "street",
+      "title": "",
+      "location": "Boston, Massachusetts",
+      "year": 2025,
+      "image": "images/Street_2025_Boston_05.jpg",
+      "alt": "Street photograph, Boston, Massachusetts"
+    },
+    {
+      "id": "street-2025-boston-06",
+      "series": "street",
+      "title": "",
+      "location": "Boston, Massachusetts",
+      "year": 2025,
+      "image": "images/Street_2025_Boston_06.jpg",
+      "alt": "Street photograph, Boston, Massachusetts"
+    },
+    {
       "id": "street-2025-boston-07",
       "series": "street",
       "title": "",
@@ -350,12 +611,30 @@
       "alt": "Street photograph, Boston, Massachusetts"
     },
     {
+      "id": "street-2025-boston-09",
+      "series": "street",
+      "title": "",
+      "location": "Boston, Massachusetts",
+      "year": 2025,
+      "image": "images/Street_2025_Boston_09.jpg",
+      "alt": "Street photograph, Boston, Massachusetts"
+    },
+    {
       "id": "street-2025-boston-10",
       "series": "street",
       "title": "",
       "location": "Boston, Massachusetts",
       "year": 2025,
       "image": "images/Street_2025_Boston_10.jpg",
+      "alt": "Street photograph, Boston, Massachusetts"
+    },
+    {
+      "id": "street-2025-boston-12",
+      "series": "street",
+      "title": "",
+      "location": "Boston, Massachusetts",
+      "year": 2025,
+      "image": "images/Street_2025_Boston_12.jpg",
       "alt": "Street photograph, Boston, Massachusetts"
     },
     {
@@ -368,6 +647,15 @@
       "alt": "Street photograph, Guanajuato, Mexico"
     },
     {
+      "id": "street-2025-gto-03",
+      "series": "street",
+      "title": "",
+      "location": "Guanajuato, Mexico",
+      "year": 2025,
+      "image": "images/Street_2025_GTO_03.jpg",
+      "alt": "Street photograph, Guanajuato, Mexico"
+    },
+    {
       "id": "street-2025-gto-04",
       "series": "street",
       "title": "",
@@ -377,12 +665,39 @@
       "alt": "Street photograph, Guanajuato, Mexico"
     },
     {
+      "id": "street-2025-oaxaca-02",
+      "series": "street",
+      "title": "",
+      "location": "Oaxaca, Mexico",
+      "year": 2025,
+      "image": "images/Street_2025_Oaxaca_02.jpg",
+      "alt": "Street photograph, Oaxaca, Mexico"
+    },
+    {
       "id": "street-2025-oaxaca-03",
       "series": "street",
       "title": "",
       "location": "Oaxaca, Mexico",
       "year": 2025,
       "image": "images/Street_2025_Oaxaca_03.jpg",
+      "alt": "Street photograph, Oaxaca, Mexico"
+    },
+    {
+      "id": "street-2025-oaxaca-05",
+      "series": "street",
+      "title": "",
+      "location": "Oaxaca, Mexico",
+      "year": 2025,
+      "image": "images/Street_2025_Oaxaca_05.jpg",
+      "alt": "Street photograph, Oaxaca, Mexico"
+    },
+    {
+      "id": "street-2025-oaxaca-07",
+      "series": "street",
+      "title": "",
+      "location": "Oaxaca, Mexico",
+      "year": 2025,
+      "image": "images/Street_2025_Oaxaca_07.jpg",
       "alt": "Street photograph, Oaxaca, Mexico"
     },
     {
@@ -413,12 +728,30 @@
       "alt": "Street photograph, Oaxaca, Mexico"
     },
     {
+      "id": "street-2025-oaxaca-16",
+      "series": "street",
+      "title": "",
+      "location": "Oaxaca, Mexico",
+      "year": 2025,
+      "image": "images/Street_2025_Oaxaca_16.jpg",
+      "alt": "Street photograph, Oaxaca, Mexico"
+    },
+    {
       "id": "street-2025-oaxaca-18",
       "series": "street",
       "title": "",
       "location": "Oaxaca, Mexico",
       "year": 2025,
       "image": "images/Street_2025_Oaxaca_18.jpg",
+      "alt": "Street photograph, Oaxaca, Mexico"
+    },
+    {
+      "id": "street-2025-oaxaca-19",
+      "series": "street",
+      "title": "",
+      "location": "Oaxaca, Mexico",
+      "year": 2025,
+      "image": "images/Street_2025_Oaxaca_19.jpg",
       "alt": "Street photograph, Oaxaca, Mexico"
     },
     {
@@ -431,12 +764,48 @@
       "alt": "Street photograph, Oaxaca, Mexico"
     },
     {
+      "id": "street-2025-oaxaca-22",
+      "series": "street",
+      "title": "",
+      "location": "Oaxaca, Mexico",
+      "year": 2025,
+      "image": "images/Street_2025_Oaxaca_22.jpg",
+      "alt": "Street photograph, Oaxaca, Mexico"
+    },
+    {
+      "id": "street-2025-oaxaca-23",
+      "series": "street",
+      "title": "",
+      "location": "Oaxaca, Mexico",
+      "year": 2025,
+      "image": "images/Street_2025_Oaxaca_23.jpg",
+      "alt": "Street photograph, Oaxaca, Mexico"
+    },
+    {
       "id": "street-2025-oaxaca-25",
       "series": "street",
       "title": "",
       "location": "Oaxaca, Mexico",
       "year": 2025,
       "image": "images/Street_2025_Oaxaca_25.jpg",
+      "alt": "Street photograph, Oaxaca, Mexico"
+    },
+    {
+      "id": "street-2025-oaxaca-29",
+      "series": "street",
+      "title": "",
+      "location": "Oaxaca, Mexico",
+      "year": 2025,
+      "image": "images/Street_2025_Oaxaca_29.jpg",
+      "alt": "Street photograph, Oaxaca, Mexico"
+    },
+    {
+      "id": "street-2025-oaxaca-30",
+      "series": "street",
+      "title": "",
+      "location": "Oaxaca, Mexico",
+      "year": 2025,
+      "image": "images/Street_2025_Oaxaca_30.jpg",
       "alt": "Street photograph, Oaxaca, Mexico"
     },
     {
@@ -447,6 +816,15 @@
       "year": 2025,
       "image": "images/Street_2025_Oaxaca_31.jpg",
       "alt": "Street photograph, Oaxaca, Mexico"
+    },
+    {
+      "id": "street-2025-tepoztlan-01",
+      "series": "street",
+      "title": "",
+      "location": "Tepoztlán, Mexico",
+      "year": 2025,
+      "image": "images/Street_2025_Tepoztlan_01.jpg",
+      "alt": "Street photograph, Tepoztlán, Mexico"
     },
     {
       "id": "street-2025-tepoztlan-04",
@@ -485,12 +863,48 @@
       "alt": "Street photograph, Querétaro, Mexico"
     },
     {
+      "id": "street-2026-queretaro-07",
+      "series": "street",
+      "title": "",
+      "location": "Querétaro, Mexico",
+      "year": 2026,
+      "image": "images/Street_2026_Queretaro_07.jpg",
+      "alt": "Street photograph, Querétaro, Mexico"
+    },
+    {
       "id": "street-2026-queretaro-09",
       "series": "street",
       "title": "",
       "location": "Querétaro, Mexico",
       "year": 2026,
       "image": "images/Street_2026_Queretaro_09.jpg",
+      "alt": "Street photograph, Querétaro, Mexico"
+    },
+    {
+      "id": "street-2026-queretaro-10",
+      "series": "street",
+      "title": "",
+      "location": "Querétaro, Mexico",
+      "year": 2026,
+      "image": "images/Street_2026_Queretaro_10.jpg",
+      "alt": "Street photograph, Querétaro, Mexico"
+    },
+    {
+      "id": "street-2026-queretaro-11",
+      "series": "street",
+      "title": "",
+      "location": "Querétaro, Mexico",
+      "year": 2026,
+      "image": "images/Street_2026_Queretaro_11.jpg",
+      "alt": "Street photograph, Querétaro, Mexico"
+    },
+    {
+      "id": "street-2026-queretaro-12",
+      "series": "street",
+      "title": "",
+      "location": "Querétaro, Mexico",
+      "year": 2026,
+      "image": "images/Street_2026_Queretaro_12.jpg",
       "alt": "Street photograph, Querétaro, Mexico"
     }
   ]
